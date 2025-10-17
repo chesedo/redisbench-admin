@@ -34,7 +34,7 @@ def spin_up_local_redis(
         configuration_parameters,
         modules_configuration_parameters_map,
         "yes",
-        "yes",
+        "no",
         redis_7,
     )
 
@@ -58,7 +58,7 @@ def generate_standalone_redis_server_args(
     configuration_parameters=None,
     modules_configuration_parameters_map={},
     enable_debug_command="yes",
-    daemonize="yes",
+    daemonize="no",
     enable_redis_7_config_directives=False,
 ):
     logfile = "redis.log"
